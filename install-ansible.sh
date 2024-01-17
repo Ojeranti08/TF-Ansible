@@ -7,7 +7,7 @@ sudo yum install -y httpd
 sudo systemctl start httpd
 sudo systemctl enable httpd
 ansible -m ping node1 aws.ini 
-mkdir ansible repo
-cd ansible repo
+mkdir ansible-repo 
+cd ansible-repo
 git clone https://github.com/CeeyIT-Solutions/ecomm-3.git
 sudo mv ecomm-3/* /var/www/html/ 
